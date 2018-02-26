@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1">
+
+    <Button
+        android:fontFamily="sans-serif-thin"
+        android:layout_margin="15dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/silentPickTime"
+        android:text="Silent Time"
+        android:background="#009A9A"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/silentTimeDisplay"
+        android:textColor= "#009A9A"
+        android:layout_toRightOf="@+id/silentPickTime"
+        android:shadowColor="#009A9A"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"/>
+
+    <Button
+        android:fontFamily="sans-serif-thin"
+        android:layout_margin="15dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/unsilentPickTime"
+        android:text="Unsilent Time"
+        android:background="#009A9A"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/silentPickTime"/>
+
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/silentTimeDisplay"
+        android:layout_toRightOf="@+id/unsilentPickTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unsilentTimeDisplay"
+        android:textColor="#009A9A"
+        android:shadowColor="#009A9A"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="10"/>
+    <Button
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        android:text="Show List"
+        android:background="#009A9A"
+        android:textColor="#FFFFFF"
+        android:id="@+id/showlist"/>
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="25dp"
+        android:textColor="#009A9A"
+        android:layout_toRightOf="@+id/silentPickTime"/>
+
+    <TextView
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="25dp"
+        android:textColor="#009A9A"
+        android:layout_below="@id/silentPickTime"
+        android:layout_toRightOf="@+id/unsilentPickTime"/>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_place_current"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    tools:context="com.example.project.smartsilent.PlaceCurrent">
+
+
+
+    <RadioGroup
+        android:id="@+id/rdogrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/button_selector_1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Pick Place"/>
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/btn2"
+            android:layout_width="120dp"
+            android:background="@drawable/button_selector_1"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Current Place"/>
+
+        <RadioButton
+            android:id="@+id/btn3"
+            android:text="List"
+            android:gravity="center"
+            android:background="@drawable/button_selector_1"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="0dp"
+            android:button="@null"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lattitude"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/rdogrp"
+        android:textColor="#009A9A"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Latitude:"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/valLat"
+        android:layout_below="@id/rdogrp"
+        android:textColor="#009A9A"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/lattitude"
+        android:fontFamily="sans-serif-condensed" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/longitude"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/lattitude"
+        android:layout_marginTop="20dp"
+        android:textColor="#009A9A"
+        android:textSize="25dp"
+        android:text="Longitude:"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valLong"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/lattitude"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/longitude"
+        android:textColor="#009A9A"
+        android:textSize="25dp"
+        android:text="" />
+
+    <Button
+        android:text="Start"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/valLong"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="160dp"
+        android:id="@+id/buttonstart"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="addGeofencesButtonHandler"
+        android:background="#009A9A"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:background="#009A9A"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-thin"
+        android:text="Stop"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/buttonstop"
+        android:onClick="removeGeofencesButtonHandler"
+        android:layout_toRightOf="@+id/buttonstart"
+        android:layout_below="@+id/addGeofence"
+
+        />
+
+
+
+    <Button
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        android:text="Select this Place"
+        android:background="#009A9A"
+        android:textColor="#FFFFFF"
+        android:id="@+id/addGeofence"/>
+
+
+</RelativeLayout>

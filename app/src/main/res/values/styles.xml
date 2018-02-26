@@ -1,0 +1,101 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#546866</item>
+        <item name="colorPrimaryDark">#134684</item>
+        <item name="colorAccent">#564658</item>
+
+        <item name="homeAsUpIndicator">@drawable/time</item>
+        <item name="android:homeAsUpIndicator">@drawable/time</item>
+    </style>
+
+
+
+    <style name="Theme.AppCompat.DayNight.DarkActionBar">
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">#009A9A</item>
+    </style>
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+
+    <!-- Application theme.
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:typeface">sans</item>
+    </style>-->
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">15dp</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+
+    <!--faojul-->
+
+    <style name="TextView.Header" parent="TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/Text.VeryLarge</item>
+    </style>
+
+
+
+
+
+
+    <style name="TextView" parent="AppTheme">
+        <item name="android:textColor">@color/TextColor.DarkGray</item>
+        <item name="android:textSize">@dimen/Text.Standard</item>
+    </style>
+
+
+
+    <style name="TextView.EmptyState" parent="TextView">
+        <item name="android:textColor">@color/TextColor.White</item>
+        <item name="android:textSize">@dimen/Text.EmptyState</item>
+        <item name="android:layout_margin">@dimen/Margin.Double</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextView.Small" parent="TextView">
+        <item name="android:textColor">@color/TextColor.Black</item>
+        <item name="android:textSize">@dimen/Text.Small</item>
+    </style>
+
+    <style name="EditText" parent="AppTheme">
+        <item name="android:textColor">@color/TextColor.Black</item>
+        <item name="android:textColorHint">@color/TextColor.Gray</item>
+        <item name="android:layout_marginRight">@dimen/Margin.Standard</item>
+        <item name="android:layout_marginLeft">@dimen/Margin.Standard</item>
+        <item name="android:layout_marginTop">@dimen/Margin.Half</item>
+        <item name="android:layout_marginBottom">@dimen/Margin.Half</item>
+        <item name="android:textSize">@dimen/Text.Standard</item>
+    </style>
+
+    <style name="DeleteButton" parent="AppTheme">
+        <item name="android:textColor">@color/TextColor.DarkGray</item>
+        <item name="android:textSize">@dimen/Text.Standard</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Divider.Horizontal" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Divider.Width</item>
+        <item name="android:background">@color/Divider</item>
+    </style>
+</resources>

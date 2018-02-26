@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--list Dimention-->
+
+
+
+    <!-- Margins -->
+    <dimen name="Margin.Half">8dp</dimen>
+    <dimen name="Margin.Standard">16dp</dimen>
+    <dimen name="Margin.Double">32dp</dimen>
+    <dimen name="Margin.FABPadding">96dp</dimen>
+
+    <!-- Widths -->
+    <dimen name="Width.Label">90dp</dimen>
+    <dimen name="Width.Dialog">280dp</dimen>
+
+
+    <!-- Text Size -->
+    <dimen name="Text.Small">12sp</dimen>
+    <dimen name="Text.Standard">14sp</dimen>
+    <dimen name="Text.Large">16sp</dimen>
+    <dimen name="Text.VeryLarge">18sp</dimen>
+    <dimen name="Text.EmptyState">20sp</dimen>
+
+    <!-- Dividers -->
+    <dimen name="Divider.Width">1dp</dimen>
+
+</resources>

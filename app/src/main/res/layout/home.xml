@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009A9A"
+        android:textSize="50dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Smart Silent"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:shadowColor="#009688"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009A9A"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Be Smart!"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:shadowColor="#009688"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00BCD4"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Silent your device at specific \n places and time automatically using\nSMART SILENT."
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:shadowColor="#009688"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00BCD4"
+        android:textSize="15dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Please navigate through sliding navigation drawer."
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:shadowColor="#009688"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"/>
+
+</LinearLayout>

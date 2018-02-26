@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_place_picker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    tools:context="com.example.project.smartsilent.PickPlace">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009A9A"
+        android:layout_marginLeft="60dp"
+        android:textSize="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_gravity="center"
+        android:text=" Click the following button \n   to select nearby places \nor search places worldwide."/>
+    <Button
+        android:fontFamily="sans-serif-thin"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="80dp"
+        android:text="Select Place"
+        android:background="#009A9A"
+        android:textColor="#FFFFFF"
+        android:id="@+id/show_place_picker"/>
+        <RadioGroup
+            android:id="@+id/rdogrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btn1"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/button_selector_1"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="Pick Place"/>
+
+                <RadioButton
+                    android:id="@+id/btn2"
+                    android:layout_width="120dp"
+                    android:background="@drawable/button_selector_1"
+                    android:layout_height="50dp"
+                    android:layout_margin="0dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Current Place"/>
+
+                <RadioButton
+                    android:id="@+id/btn3"
+                    android:text="List"
+                    android:gravity="center"
+                    android:background="@drawable/button_selector_1"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="0dp"
+                    android:button="@null"
+                    />
+        </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    android:orientation="vertical">
+
+
+
+    <!--<RadioGroup-->
+        <!--android:id="@+id/rdogrp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="0dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal" >-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/btn1"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_margin="0dp"-->
+            <!--android:background="@drawable/button_selector_1"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Pick Place"/>-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/btn2"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:background="@drawable/button_selector_1"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_margin="0dp"-->
+            <!--android:button="@null"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Current Place"/>-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/btn3"-->
+            <!--android:text="List"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@drawable/button_selector_1"-->
+            <!--android:checked="true"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_margin="0dp"-->
+            <!--android:button="@null"-->
+            <!--/>-->
+    <!--</RadioGroup>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rvtimeItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"/>
+
+</RelativeLayout>
+
