@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project.smartsilent"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_n"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!--
+        	We will launch BaseActivity as launcher.
+        	We will check if BaseActivity launch first time and open desired smartsilent and set example item selected
+        -->
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".PlaceList" />
+        <activity android:name=".TimeActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".PickPlace" />
+        <activity android:name=".PlaceCurrent" />
+
+        <receiver android:name=".SilenceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="net.accella.sheduleexample.SilenceBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".UnsilenceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="net.accella.sheduleexample.UnsilenceBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GeofenceTransitionsIntentService" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCkdiCFyA6bV-rX0aFswbe7KYFtL8kE6-8" />
+
+        <activity android:name=".TimeList"></activity>
+    </application>
+
+</manifest>
